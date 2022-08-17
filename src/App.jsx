@@ -1,5 +1,7 @@
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Book from "./pages/Book";
+import Booklist from "./pages/Booklist";
 
 function App() {
 	// First, use <BrowserRouter> to create a <Router> component. Our <App /> is wrapped in it.
