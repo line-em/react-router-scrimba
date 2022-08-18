@@ -9,7 +9,7 @@ export default function Nav() {
 			{/*  */}
 			{/* This is the basic way of Linking. This is basically an anchor tag. */}
 			{/* <Link to={`/`}>Home</Link> */}
-			{/* The following is useful for login/signin pages, for instance. The page will not be recorded in History */}
+			{/* The following is useful for login/sign in pages, for instance. The page will not be recorded in History */}
 			{/* <Link to={`/about`} replace>
 				About
 			</Link> */}
@@ -18,7 +18,7 @@ export default function Nav() {
 			{/* NavLink Method */}
 			{/*  */}
 			{/* This has some extra functionality, and it's best used in a Navbar. */}
-			<NavLink to={`/`}>Home</NavLink> / <NavLink to={`/login`}>Login</NavLink> /{" "}
+			<NavLink to={`/`}>Home</NavLink> /<NavLink to={`/login`}>Login</NavLink> /{" "}
 			<NavLink to={`/booklist`} activeClassName="active">
 				Booklist
 			</NavLink>
