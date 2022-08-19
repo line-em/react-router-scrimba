@@ -21,6 +21,21 @@ export default function App() {
 			{/* Here we DEFINE the routes, but it doesn't generate any anchor links nor anything like that. */}
 			<Routes>
 				<Route path="/" element={<Home />} />
+
+				{/* 
+					Creatin Protected Route: A regular component, with {children} prop, that will make the check. If a condition is met, the component will be rendered. Otherwise, the user will be redirected to another page with <Navigate /> or useNavigate().
+					This is useful for pages that require a login.
+					
+					<Route
+						path="/account"
+						element={
+							<ProtectedRoute>
+								<Account />
+							</ProtectedRoute>
+						}
+					/>
+				
+				*/}
 				<Route path="/search" element={<Search />} />
 				<Route path="/login" element={<Login />} />
 				{/* The following is not a self-closing tag. That's because there's child navigation. */}
