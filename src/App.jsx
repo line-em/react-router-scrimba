@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import Search from "./assets/Search.jsx";
 import Book from "./pages/Book";
 import Booklist from "./pages/Booklist";
 import Home from "./pages/Home";
@@ -8,7 +9,7 @@ import NotFound from "./pages/NotFound";
 
 // React Router documentation is found here: https://reactrouter.com/docs/en/v6/getting-started/concepts
 
-function App() {
+export default function App() {
 	// First, use <BrowserRouter> to create a <Router> component. Our <App /> is wrapped in it.
 	// Then, you can proceed as follows:
 	return (
@@ -20,6 +21,7 @@ function App() {
 			{/* Here we DEFINE the routes, but it doesn't generate any anchor links nor anything like that. */}
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/search" element={<Search />} />
 				<Route path="/login" element={<Login />} />
 				{/* The following is not a self-closing tag. That's because there's child navigation. */}
 				{/* This is a nested route. */}
@@ -42,5 +44,3 @@ function App() {
 		</>
 	);
 }
-
-export default App;

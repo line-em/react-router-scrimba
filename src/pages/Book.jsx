@@ -16,6 +16,7 @@ export default function Book(props) {
 	const goBack = () => {
 		navigate("/booklist");
 	};
+
 	// To go forward or backwards, you could also use:
 	// const goForward = () => {
 	// 	navigate(`/booklist/${currentBook.id + 1}`);

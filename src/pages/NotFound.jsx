@@ -5,7 +5,10 @@ export default function NotFound() {
 	const navigate = useNavigate();
 	useEffect(() => {
 		setTimeout(() => {
-			navigate("/");
+			navigate("/", { state: { message: "Page not found! Back to home..." } });
+			// We can pass a persistant state, like a message, to the next page.
+			// We can access this with useLocation(). Check <Home />, our redirect page,
+			// to see how we can access this state.
 		}, 1000);
 	}, []);
 

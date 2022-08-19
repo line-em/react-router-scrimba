@@ -15,7 +15,7 @@ export default function Nav() {
 			{/*  */}
 			{/* This has some extra functionality, and it's best used in a Navbar. */}
 			<NavLink to={`/`}>Home</NavLink> /<NavLink to={`/login`}>Login</NavLink> /
-			<NavLink to={`/booklist`}>Booklist</NavLink>
+			<NavLink to={`/booklist`}>Booklist</NavLink> / <NavLink to={`/search`}>Search</NavLink>
 			{/* It will automatically grab the .active class from your styles. Theoritically you can customize, but I was unable to.*/}
 			<hr />
 		</div>
