@@ -41,7 +41,7 @@ export default function Book(props) {
 	const toggleDescription = () => setIsShortDescription(!isShortDescription);
 
 	return (
-		<div>
+		<div key={currentBook.id}>
 			<hr />
 			<sub style={{ color: "magenta" }}>
 				This is the book sub-content, placed with an Outlet tag.
