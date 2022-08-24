@@ -11,6 +11,10 @@ import NotFound from "./pages/NotFound";
 
 export default function App() {
 	// First, use <BrowserRouter> to create a <Router> component. Our <App /> is wrapped in it.
+	// If using GITHUB PAGES, use <HashRouter> instead.
+	// Add a "homepage": "linkhere.com/link" at package.json, so our app gets a root.
+	// Add a base: '', base: '/link/', or base: 'https://full-link.com' at vite.config.js or equivalent, to make it all function correctly.
+
 	// Then, you can proceed as follows:
 	return (
 		<>
